@@ -44,7 +44,7 @@ A structured AI collaboration framework:
 
 **Task → Context → Role → Interview → Deliverable → Challenger → Free Flow**
 
-Designed to improve problem definition, context gathering, expert framing, analysis, challenge assumptions, and produce more useful outputs.
+Designed to improve problem definition, context gathering, expert framing, analysis, assumption-testing, and output quality.
 
 ### AI Response Evaluation
 Methods for systematically evaluating AI-generated work rather than relying solely on subjective review.
@@ -54,7 +54,7 @@ Frameworks for analyzing job requirements, identifying implied hiring signals, m
 
 ## Design Principles
 
-The work in this repository generally follows several principles:
+The work in this repository generally follows several principles.
 
 **Evidence before confidence.**  
 AI-generated certainty is not evidence.
@@ -73,10 +73,29 @@ The goal is not AI theater. The goal is better work.
 
 ## Repository Structure
 
-```text
-frameworks/
-research-systems/
-talent-intelligence/
-workflows/
-case-studies/
-assets/
+- `frameworks/`
+- `research-systems/`
+- `talent-intelligence/`
+- `workflows/`
+- `case-studies/`
+- `assets/`
+
+Additional projects and supporting documentation will be added as the portfolio develops.
+
+## About
+
+Created by **Haley Brasher / HaelleauX**.
+
+My work sits at the intersection of customer success, implementation, operations, research, technology, and human-centered AI.
+
+The common thread is simple:
+
+**Turn complexity into systems people can actually use.**
+
+## Portfolio Notice
+
+This repository contains original portfolio work, frameworks, sanitized case studies, and selected demonstrations.
+
+Materials derived from professional engagements are generalized or recreated to protect confidential, proprietary, customer, and employer information.
+
+Unless explicitly stated otherwise, publication in this repository does not grant permission to reproduce or commercially reuse original frameworks or materials.
