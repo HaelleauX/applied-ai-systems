@@ -92,6 +92,11 @@ The common thread is simple:
 
 **Turn complexity into systems people can actually use.**
 
+## Supporting Artifacts
+
+- [Evidence Classification & Verification Framework](./verification-framework.md)
+- [Human Verification Testing Protocol](./testing-protocol-template.md)
+
 ## Portfolio Notice
 
 This repository contains original portfolio work, frameworks, sanitized case studies, and selected demonstrations.
