@@ -2,108 +2,63 @@
 
 ## Case Study Overview
 
-This project demonstrates a structured approach to AI-assisted research, evidence classification, source provenance, human verification, testing, and information architecture.
+This case study demonstrates a structured approach to AI-assisted research, evidence classification, source provenance, human verification, testing, and information architecture.
 
-The system was developed while researching a legacy voice-interactive consumer robot with fragmented documentation, inconsistent community knowledge, undocumented behaviors, and information distributed across manuals, user reports, archived resources, and hands-on testing.
-
-Rather than treating AI-generated synthesis as inherently reliable, the project introduced an evidence and verification architecture designed to distinguish documented facts from multi-source findings, community observations, hypotheses, and items requiring physical testing.
-
-## The Problem
-
-Researching legacy technology presents several challenges:
-
-- official documentation may be incomplete or difficult to locate
-- product behavior can differ from documented specifications
-- community knowledge varies in reliability
-- multiple sources may contradict one another
-- AI systems can confidently merge fact, inference, and speculation
-- undocumented behaviors may require physical verification
-- large research collections quickly become difficult to navigate
+The system was developed while researching a legacy voice-interactive consumer robot whose documentation was fragmented across official materials, archived resources, community reports, and hands-on observation.
 
 The challenge was not simply collecting more information.
 
-The challenge was building a system that could answer:
+It was building a research system capable of answering:
 
-**What do we know, how do we know it, how confident are we, and what still needs to be tested?**
+> **What do we know, how do we know it, how confident should we be, and what still requires human verification?**
 
-## System Design
+---
 
-The research workflow was organized into several connected components.
+## The Problem
 
-### Research Database
+Legacy-technology research creates several recurring problems:
 
-A structured research database was created to capture findings while preserving the relationship between claims and supporting evidence.
+- official documentation may be incomplete or difficult to locate
+- observed behavior can differ from documentation
+- community knowledge varies in reliability
+- credible sources may contradict one another
+- AI can collapse fact, inference, and speculation into one confident answer
+- undocumented behavior may require direct testing
+- large research collections become difficult to navigate and maintain
 
-Research items could be categorized by verification status, including:
+A useful system therefore needed to preserve uncertainty rather than hide it.
 
-- Official documentation
-- Multi-source confirmation
-- Community-reported behavior
-- Needs physical testing
+---
 
-This reduced the risk of treating every discovered claim as equally reliable.
+## System Architecture
 
-### Interaction Database
+The project separated the research problem into connected layers.
 
-A separate interaction database organized known and reported robot behaviors.
+### Research Layer
 
-Separating interaction data from general research made it possible to compare:
+Claims were captured with source context and evidence status rather than being treated as equally reliable facts.
 
-- documented commands
-- reported behaviors
-- response patterns
-- interaction conditions
-- unresolved questions
-- testing requirements
+### Interaction Layer
 
-### Testing Protocol
+Behavior-specific findings were separated from general research so that documented functionality, reported behavior, observed patterns, and unresolved questions could be compared without contaminating one another.
 
-Items that could not be confidently resolved through research were moved into a structured testing workflow.
+### Verification Layer
 
-The testing protocol supported repeatable verification by defining:
+Claims that could not be resolved through available evidence were routed to human review or controlled testing.
 
-- the behavior or claim being tested
-- required setup conditions
-- test steps
-- expected behavior
-- observed behavior
-- repeat attempts
-- verification outcome
-- notes and exceptions
+AI could assist with identifying contradictions and organizing evidence, but it was not permitted to promote an uncertain claim to verified status on its own.
 
-This created a human-in-the-loop validation layer rather than allowing AI synthesis to become the final authority.
+### Activity Layer
 
-### Activity Mapping
+Verified and qualified findings were translated into user-oriented activity structures, connecting discovered capability with prerequisites, dependencies, and documentation needs.
 
-Research findings were translated into structured user activities.
+### Information Architecture Layer
 
-The activity map connected:
+The resulting knowledge was organized into a larger documentation structure designed to reduce duplication, unsupported claims, terminology drift, fragmented instructions, and missing prerequisites.
 
-- discovered functionality
-- required setup
-- user instructions
-- dependencies
-- evidence status
-- testing status
-- documentation requirements
+---
 
-This helped transform raw research into usable product knowledge.
-
-### Information Architecture
-
-The research system ultimately supported a larger documentation structure.
-
-A master outline and developmental-edit specification were used to organize information into a coherent hierarchy and reduce:
-
-- duplication
-- unsupported claims
-- inconsistent terminology
-- fragmented instructions
-- missing prerequisites
-
-## Research Workflow
-
-The overall workflow followed this pattern:
+## High-Level Research Flow
 
 ```text
 Source Discovery
@@ -114,18 +69,92 @@ Evidence Classification
       ↓
 Cross-Source Comparison
       ↓
-Research Database
+Research System
       ↓
 Unresolved Claim Detection
       ↓
-Human / Physical Testing
+Human Verification / Testing
       ↓
-Verification Update
+Evidence Update
       ↓
-Interaction Database
-      ↓
-Activity Mapping
+Structured Knowledge Model
       ↓
 Information Architecture
       ↓
 Final Documentation
+```
+
+This is the public architecture, not the full implementation workflow.
+
+---
+
+## Human-in-the-Loop Controls
+
+The system deliberately preserves a boundary between AI assistance and human authority.
+
+AI can support:
+
+- research discovery
+- claim extraction
+- comparison across sources
+- contradiction detection
+- organization
+- draft synthesis
+
+Human review remains responsible for:
+
+- deciding whether evidence is sufficient
+- interpreting conflicting observations
+- validating physical or contextual conditions
+- approving evidence-status changes
+- determining what is safe to present as established fact
+
+---
+
+## What This Demonstrates
+
+- research operations
+- evidence discipline
+- source provenance
+- structured knowledge management
+- human-in-the-loop AI
+- testing strategy
+- uncertainty management
+- information architecture
+- AI-assisted synthesis
+- quality control
+
+---
+
+## Supporting Public Artifacts
+
+- [Evidence Classification & Verification Framework](./verification-framework.md)
+- [Human Verification Testing Protocol](./testing-protocol-template.md)
+
+These are intentionally abbreviated public versions. The detailed operating logic, schemas, templates, and project-specific research assets are not published.
+
+---
+
+## Transferable Applications
+
+The same system-design principles can support:
+
+- AI-assisted research
+- product documentation
+- knowledge-base development
+- implementation QA
+- customer-support research
+- policy or requirements analysis
+- AI-agent evaluation
+- operational validation
+- complex content systems
+
+---
+
+## Portfolio Note
+
+This case study is a sanitized public demonstration of methodology.
+
+Project-specific commands, copyrighted source material, detailed research databases, reusable schemas, complete testing logic, and unnecessary identifying material are intentionally excluded.
+
+The portfolio objective is to demonstrate disciplined AI-assisted research and human verification without publishing the complete implementation system.
