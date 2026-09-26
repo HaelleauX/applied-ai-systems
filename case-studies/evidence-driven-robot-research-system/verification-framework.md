@@ -1,111 +1,119 @@
 # Evidence Classification & Verification Framework
 
-## Purpose
+## Public Portfolio Summary
 
-This framework was designed to prevent AI-assisted research from collapsing documented fact, repeated claims, community observations, and unverified assumptions into a single category of "information."
+This artifact shows the **architecture** of an evidence-classification system used to prevent AI-assisted research from collapsing documented fact, repeated claims, community observations, and unresolved assumptions into one undifferentiated category of “information.”
 
-The system assigns an evidence status to each meaningful research claim and defines what must happen before that claim can be treated as verified.
+The complete operational framework, decision rules, schemas, and implementation logic are intentionally private.
 
-The underlying principle is simple:
-
-> A plausible claim is not the same thing as a verified claim.
+> **A plausible claim is not the same thing as a verified claim.**
 
 ---
 
-## Evidence Classification Model
+## Evidence States
 
-### 1. Official
+The system separates claims into distinct evidence states so uncertainty remains visible.
 
-**Definition:**  
-The claim is supported directly by authoritative primary documentation.
+### Official
 
-Examples of qualifying evidence may include:
+Supported directly by authoritative primary material.
 
-- official manuals
-- manufacturer documentation
-- technical specifications
-- official packaging
-- first-party archival material
+Typical examples include first-party documentation, manufacturer materials, specifications, or other primary records.
 
-**Use:**  
-May be treated as established within the limitations of the source.
+### Corroborated
 
----
+Supported by multiple credible sources but not yet established through authoritative primary documentation.
 
-### 2. Multi-Source Confirmed
+Corroboration increases confidence, but source independence, source quality, and contradictory evidence still matter.
 
-**Definition:**  
-The claim is supported by two or more independent credible sources but has not yet been located in authoritative primary documentation.
+### Community / Observational
 
-**Requirements:**
+Reported through users, collectors, archived discussions, practitioner communities, or direct observations that have not yet met the project's verification standard.
 
-- sources must be meaningfully independent
-- sources should describe substantially the same behavior or fact
-- contradictory credible evidence must be documented
-- source quality should be considered, not merely source count
+These findings are useful as research leads, not automatic facts.
 
-**Use:**  
-May be used with appropriate attribution or qualification depending on context.
+### Needs Verification
+
+Available evidence is insufficient or conflicting.
+
+The claim remains unresolved until stronger documentation, direct observation, or controlled testing provides enough evidence to reclassify it.
 
 ---
 
-### 3. Community Discovery
+## Evidence Movement
 
-**Definition:**  
-The claim is reported by users, collectors, enthusiasts, archived discussions, or other community sources but has not been sufficiently verified.
+Evidence status is **revisable**.
 
-Community observations can be extremely useful for discovering undocumented behavior, but repetition alone does not convert a claim into fact.
-
-**Use:**  
-Treat as a lead, observation, or testing candidate.
-
----
-
-### 4. Needs Testing
-
-**Definition:**  
-Available research cannot reliably settle the claim.
-
-The item requires one or more of the following:
-
-- physical testing
-- direct observation
-- stronger primary documentation
-- repeat testing
-- additional source verification
-
-**Use:**  
-Do not present as established fact.
-
----
-
-## Claim Lifecycle
-
-A research claim moves through the system rather than receiving a permanent label at discovery.
+At a high level, claims move through a process such as:
 
 ```text
-Claim Discovered
-      ↓
-Source Identified
-      ↓
-Evidence Classified
-      ↓
-Corroborating Sources Checked
-      ↓
-Conflict Assessment
-      ↓
-┌─────────────────────┐
-│ Evidence Sufficient │──→ Verified / Qualified
-└─────────────────────┘
+Discovery
+   ↓
+Source Review
+   ↓
+Evidence Classification
+   ↓
+Corroboration / Conflict Check
+   ↓
+Human Review or Verification
+   ↓
+Evidence Status Updated
+```
 
-          OR
+The exact promotion thresholds and decision logic are part of the private implementation system.
 
-┌─────────────────────┐
-│ Evidence Incomplete │──→ Needs Testing
-└─────────────────────┘
-                               ↓
-                         Test Protocol
-                               ↓
-                       Repeat Observation
-                               ↓
-                       Evidence Reclassified
+---
+
+## Design Principles
+
+### Preserve Uncertainty
+
+An unresolved claim should remain unresolved rather than being converted into confident prose.
+
+### Prefer Provenance Over Fluency
+
+A well-written answer is not necessarily a well-supported answer.
+
+### Separate Discovery From Verification
+
+Community knowledge and AI-generated hypotheses may identify useful leads without qualifying as verified evidence.
+
+### Make Contradictions Visible
+
+Conflicting evidence should be preserved for review instead of silently reconciled.
+
+### Keep Human Judgment in the Loop
+
+AI may organize, compare, and surface evidence. Human review determines whether the evidence is strong enough to change what the system treats as known.
+
+---
+
+## Why This Matters
+
+This architecture is useful anywhere AI is being asked to synthesize information from sources of uneven quality.
+
+Potential applications include:
+
+- research operations
+- knowledge management
+- AI-assisted documentation
+- product research
+- customer implementation QA
+- policy analysis
+- AI-agent evaluation
+- support troubleshooting
+
+---
+
+## Portfolio Boundary
+
+This public version demonstrates the reasoning model without publishing:
+
+- exact scoring or promotion rules
+- database schemas
+- decision tables
+- reusable implementation templates
+- project-specific claims or source collections
+- automation logic
+
+Those elements remain part of the private methodology.
