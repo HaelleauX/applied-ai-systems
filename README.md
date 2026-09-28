@@ -115,11 +115,23 @@ The objective is simple:
 
 ## About
 
-Created by **Haley Brasher / HaelleauX**.
+The objective is simple:
 
-My work sits at the intersection of customer success, implementation, operations, research, technology, and human-centered AI.
+> **Show the capability without publishing the entire machine.**
 
-**Turn complexity into systems people can actually use.**
+## About
+
+Created by **Haley Brasher | HaelleauX**.
+
+I build systems for the places where technology, operations, customer experience, and human judgment stop lining up neatly.
+
+**When the dashboard says green and reality says otherwise, I know where to look.**
+
+My work spans applied AI, customer operations, implementation, research, and value realization, with a particular focus on finding the gap between what a system says should be happening and what people are actually experiencing.
+
+I use AI to investigate complexity, surface hidden dependencies, challenge false certainty, and turn fragmented information into something people can actually act on.
+
+**I make complicated systems more reliable, without removing the humans who have to trust and use them.**
 
 ## Portfolio Notice
 
