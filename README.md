@@ -43,7 +43,7 @@ Demonstrated capabilities include:
 
 ### CRIT+C Strategy Framework
 
-An original structured AI-collaboration framework for improving problem definition, context gathering, expert framing, interrogation, output design, challenge-testing, and exploratory reasoning.
+A structured AI-collaboration framework for improving problem definition, context gathering, expert framing, interrogation, output design, challenge-testing, and exploratory reasoning.
 
 The public portfolio references the framework at a high level; the full operating method remains private.
 
