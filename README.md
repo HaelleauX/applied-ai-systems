@@ -115,12 +115,6 @@ The objective is simple:
 
 ## About
 
-The objective is simple:
-
-> **Show the capability without publishing the entire machine.**
-
-## About
-
 Created by **Haley Brasher | HaelleauX**.
 
 I build systems for the places where technology, operations, customer experience, and human judgment stop lining up neatly.
