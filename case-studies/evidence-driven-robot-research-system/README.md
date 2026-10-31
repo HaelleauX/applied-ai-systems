@@ -1,164 +1,51 @@
 # Evidence-Driven AI Research System
 
-## Case Study Overview
+**Organizing fragmented technology research into traceable claims and explicit verification needs.**
 
-This case study demonstrates a structured approach to AI-assisted research, evidence classification, source provenance, human verification, testing, and information architecture.
-
-The system was developed while researching a legacy voice-interactive consumer robot whose documentation was fragmented across official materials, archived resources, community reports, and hands-on observation.
-
-The challenge was not simply collecting more information.
-
-It was building a research system capable of answering:
-
-> **What do we know, how do we know it, how confident should we be, and what still requires human verification?**
-
----
+*Research system case study | Sanitized methodology demonstration*
 
 ## The Problem
 
-Legacy-technology research creates several recurring problems:
+Research on a legacy voice-interactive consumer robot drew on official documentation, archived resources, community reports, and hands-on observation. Sources were incomplete, sometimes contradictory, and uneven in reliability.
 
-- official documentation may be incomplete or difficult to locate
-- observed behavior can differ from documentation
-- community knowledge varies in reliability
-- credible sources may contradict one another
-- AI can collapse fact, inference, and speculation into one confident answer
-- undocumented behavior may require direct testing
-- large research collections become difficult to navigate and maintain
+The central question was: **What do we know, how do we know it, and what still needs verification?**
 
-A useful system therefore needed to preserve uncertainty rather than hide it.
+## My Contribution
 
----
+I structured the research into connected layers that preserved evidence quality and uncertainty.
 
-## System Architecture
+- **Captured claims with source context:** kept provenance and evidence status attached to findings.
+- **Separated types of evidence:** distinguished documented functionality, reported behavior, observed patterns, and unresolved questions.
+- **Defined a verification route:** sent claims that could not be resolved from available evidence to human review or controlled testing.
+- **Connected findings to practical use:** organized capabilities alongside prerequisites, dependencies, and documentation needs.
+- **Designed the knowledge structure:** addressed duplication, terminology drift, unsupported claims, and missing prerequisites.
 
-The project separated the research problem into connected layers.
+## Output
 
-### Research Layer
+The work produced a research and documentation structure for organizing findings and verification needs. The public portfolio includes two abbreviated supporting artifacts:
 
-Claims were captured with source context and evidence status rather than being treated as equally reliable facts.
+| Artifact | Purpose |
+| --- | --- |
+| [Evidence Classification & Verification Framework](./verification-framework.md) | Explain how claims and uncertainty are classified and reviewed |
+| [Human Verification Testing Protocol](./testing-protocol-template.md) | Structure observations, trials, and discrepancy handling |
 
-### Interaction Layer
+These artifacts demonstrate the method. They are not a published test-results dataset or a measured claim of improved accuracy or productivity.
 
-Behavior-specific findings were separated from general research so that documented functionality, reported behavior, observed patterns, and unresolved questions could be compared without contaminating one another.
+## Human Review
 
-### Verification Layer
+AI supported discovery, extraction, comparison, organization, and draft synthesis. Human review retained authority over evidence sufficiency, conflicting observations, testing conditions, and evidence-status changes.
 
-Claims that could not be resolved through available evidence were routed to human review or controlled testing.
+## The Judgment Behind the Work
 
-AI could assist with identifying contradictions and organizing evidence, but it was not permitted to promote an uncertain claim to verified status on its own.
+**An unresolved claim remains unresolved until the evidence supports changing its status.**
 
-### Activity Layer
+This approach transfers to product documentation, support research, implementation QA, knowledge-base development, and AI-output evaluation.
 
-Verified and qualified findings were translated into user-oriented activity structures, connecting discovered capability with prerequisites, dependencies, and documentation needs.
-
-### Information Architecture Layer
-
-The resulting knowledge was organized into a larger documentation structure designed to reduce duplication, unsupported claims, terminology drift, fragmented instructions, and missing prerequisites.
-
----
-
-## High-Level Research Flow
-
-```text
-Source Discovery
-      ↓
-Claim Extraction
-      ↓
-Evidence Classification
-      ↓
-Cross-Source Comparison
-      ↓
-Research System
-      ↓
-Unresolved Claim Detection
-      ↓
-Human Verification / Testing
-      ↓
-Evidence Update
-      ↓
-Structured Knowledge Model
-      ↓
-Information Architecture
-      ↓
-Final Documentation
-```
-
-This is the public architecture, not the full implementation workflow.
-
----
-
-## Human-in-the-Loop Controls
-
-The system deliberately preserves a boundary between AI assistance and human authority.
-
-AI can support:
-
-- research discovery
-- claim extraction
-- comparison across sources
-- contradiction detection
-- organization
-- draft synthesis
-
-Human review remains responsible for:
-
-- deciding whether evidence is sufficient
-- interpreting conflicting observations
-- validating physical or contextual conditions
-- approving evidence-status changes
-- determining what is safe to present as established fact
-
----
-
-## What This Demonstrates
-
-- research operations
-- evidence discipline
-- source provenance
-- structured knowledge management
-- human-in-the-loop AI
-- testing strategy
-- uncertainty management
-- information architecture
-- AI-assisted synthesis
-- quality control
-
----
-
-## Supporting Public Artifacts
-
-- [Evidence Classification & Verification Framework](./verification-framework.md)
-- [Human Verification Testing Protocol](./testing-protocol-template.md)
-
-These are intentionally abbreviated public versions. The detailed operating logic, schemas, templates, and project-specific research assets are not published.
-
----
-
-## Transferable Applications
-
-The same system-design principles can support:
-
-- AI-assisted research
-- product documentation
-- knowledge-base development
-- implementation QA
-- customer-support research
-- policy or requirements analysis
-- AI-agent evaluation
-- operational validation
-- complex content systems
-
----
+**Capabilities demonstrated:** research operations, source provenance, uncertainty management, testing strategy, information architecture, and AI-assisted knowledge management.
 
 ## Portfolio Note
 
-This case study is a sanitized public demonstration of methodology.
-
-Project-specific commands, copyrighted source material, detailed research databases, reusable schemas, complete testing logic, and unnecessary identifying material are intentionally excluded.
-
-The portfolio objective is to demonstrate disciplined AI-assisted research and human verification without publishing the complete implementation system.
-
+This is a sanitized demonstration. Detailed research collections, project-specific commands, copyrighted source material, private schemas, and complete implementation logic are excluded.
 
 ---
 
