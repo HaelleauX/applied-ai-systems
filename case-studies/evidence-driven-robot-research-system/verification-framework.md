@@ -1,119 +1,42 @@
 # Evidence Classification & Verification Framework
 
-## Public Portfolio Summary
+**Keep claims traceable, contradictions visible, and uncertainty explicit.**
 
-This artifact shows the **architecture** of an evidence-classification system used to prevent AI-assisted research from collapsing documented fact, repeated claims, community observations, and unresolved assumptions into one undifferentiated category of “information.”
+*Public methodology summary*
 
-The complete operational framework, decision rules, schemas, and implementation logic are intentionally private.
+## Purpose
 
-> **A plausible claim is not the same thing as a verified claim.**
+AI-assisted research can blend primary documentation, repeated reports, direct observations, and inference into a single confident narrative. This framework separates those evidence types so a reviewer can assess what each claim actually supports.
 
----
+## Evidence Labels
 
-## Evidence States
+| Label | Meaning | Review consideration |
+| --- | --- | --- |
+| Official | Supported by authoritative primary material | Confirm the version, context, and scope; official documentation may be outdated or incomplete |
+| Corroborated | Supported by multiple credible sources | Check whether the sources are independent and whether contradictory evidence exists |
+| Community / Observational | Reported by users or observed directly without meeting the project's verification standard | Preserve conditions and limitations; use as a research lead |
+| Needs Verification | Evidence is insufficient or conflicting | Record the open question and the evidence or testing needed |
 
-The system separates claims into distinct evidence states so uncertainty remains visible.
+A label describes the available support. It is not a guarantee that a claim holds under every condition. Source provenance and verification status should remain distinguishable in review.
 
-### Official
+## Review Approach
 
-Supported directly by authoritative primary material.
+1. Capture the claim with its source and relevant context.
+2. Review source quality, independence, version, and applicability.
+3. Compare supporting and contradictory evidence.
+4. Route unresolved questions to human review or [controlled testing](./testing-protocol-template.md).
+5. Update the status only when the evidence supports the change, retaining the reason for revision.
 
-Typical examples include first-party documentation, manufacturer materials, specifications, or other primary records.
+Evidence status can move in either direction when new information emerges.
 
-### Corroborated
+## Human Judgment
 
-Supported by multiple credible sources but not yet established through authoritative primary documentation.
+AI can extract, organize, compare, and flag evidence. Human review determines whether the available support is sufficient and whether a change in classification is justified.
 
-Corroboration increases confidence, but source independence, source quality, and contradictory evidence still matter.
+Repeated claims do not automatically constitute independent corroboration. Fluent synthesis does not add evidence.
 
-### Community / Observational
+## Public Scope
 
-Reported through users, collectors, archived discussions, practitioner communities, or direct observations that have not yet met the project's verification standard.
+This is an abbreviated reasoning framework. Detailed classification rules, thresholds, schemas, source collections, and automation logic remain private.
 
-These findings are useful as research leads, not automatic facts.
-
-### Needs Verification
-
-Available evidence is insufficient or conflicting.
-
-The claim remains unresolved until stronger documentation, direct observation, or controlled testing provides enough evidence to reclassify it.
-
----
-
-## Evidence Movement
-
-Evidence status is **revisable**.
-
-At a high level, claims move through a process such as:
-
-```text
-Discovery
-   ↓
-Source Review
-   ↓
-Evidence Classification
-   ↓
-Corroboration / Conflict Check
-   ↓
-Human Review or Verification
-   ↓
-Evidence Status Updated
-```
-
-The exact promotion thresholds and decision logic are part of the private implementation system.
-
----
-
-## Design Principles
-
-### Preserve Uncertainty
-
-An unresolved claim should remain unresolved rather than being converted into confident prose.
-
-### Prefer Provenance Over Fluency
-
-A well-written answer is not necessarily a well-supported answer.
-
-### Separate Discovery From Verification
-
-Community knowledge and AI-generated hypotheses may identify useful leads without qualifying as verified evidence.
-
-### Make Contradictions Visible
-
-Conflicting evidence should be preserved for review instead of silently reconciled.
-
-### Keep Human Judgment in the Loop
-
-AI may organize, compare, and surface evidence. Human review determines whether the evidence is strong enough to change what the system treats as known.
-
----
-
-## Why This Matters
-
-This architecture is useful anywhere AI is being asked to synthesize information from sources of uneven quality.
-
-Potential applications include:
-
-- research operations
-- knowledge management
-- AI-assisted documentation
-- product research
-- customer implementation QA
-- policy analysis
-- AI-agent evaluation
-- support troubleshooting
-
----
-
-## Portfolio Boundary
-
-This public version demonstrates the reasoning model without publishing:
-
-- exact scoring or promotion rules
-- database schemas
-- decision tables
-- reusable implementation templates
-- project-specific claims or source collections
-- automation logic
-
-Those elements remain part of the private methodology.
+[Research Case Study](./README.md) · [Testing Protocol](./testing-protocol-template.md) · [Applied AI Systems](../../README.md)
