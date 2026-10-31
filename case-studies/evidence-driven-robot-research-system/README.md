@@ -158,3 +158,8 @@ This case study is a sanitized public demonstration of methodology.
 Project-specific commands, copyrighted source material, detailed research databases, reusable schemas, complete testing logic, and unnecessary identifying material are intentionally excluded.
 
 The portfolio objective is to demonstrate disciplined AI-assisted research and human verification without publishing the complete implementation system.
+
+
+---
+
+[Back to Applied AI Systems](../../README.md) · [GitHub Profile](https://github.com/HaelleauX)
