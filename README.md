@@ -1,136 +1,61 @@
 # Applied AI Systems
 
-Practical AI frameworks, research systems, evaluation methods, and human-in-the-loop workflows designed to solve real-world operational problems.
+**Evidence-driven research and AI workflows with human judgment built in.**
 
-This repository is a **public portfolio layer** for applied AI work focused on turning ambiguous, complex, or unstructured information into usable systems for research, operations, customer success, decision-making, and knowledge work.
+I design systems that turn fragmented information into traceable evidence, useful analysis, and clearer operational decisions. This portfolio shows selected work in research, verification, knowledge management, and AI evaluation.
 
-It demonstrates how I think and what I build without publishing the complete operating logic, reusable prompt systems, proprietary templates, or implementation playbooks behind the work.
-
-## Areas of Focus
-
-### AI-Assisted Research Systems
-Structured approaches for collecting, classifying, validating, and synthesizing information while preserving source provenance and separating verified evidence from inference.
-
-### Human-in-the-Loop AI
-Workflows that combine AI acceleration with human judgment, review, validation, and accountability.
-
-### AI Evaluation & Quality Control
-Methods for evaluating AI outputs for accuracy, usefulness, completeness, evidence quality, and operational fit.
-
-### Talent Intelligence
-AI-enabled approaches for job-description analysis, candidate positioning, capability mapping, and talent-market research.
-
-### Structured Problem Solving
-Reusable approaches for moving from ambiguity to context, analysis, decision-making, and execution.
-
-## Featured Work
+## Start Here
 
 ### [Evidence-Driven AI Research System](./case-studies/evidence-driven-robot-research-system/)
 
-A case study showing how a fragmented research problem was converted into a structured evidence, verification, testing, and information-architecture system.
+A research project involving a legacy voice-interactive consumer robot became a practical test of how to manage incomplete documentation, conflicting sources, and claims that required hands-on verification.
 
-Demonstrated capabilities include:
+The case study explains how I separated documented facts, reported behavior, inference, and unresolved questions, then organized the findings for review and use.
 
-- multi-source research synthesis
-- evidence classification
-- source provenance
-- claim tracking
-- human verification
-- structured testing
-- information architecture
-- AI-assisted knowledge management
-- uncertainty preservation
+| Public artifact | What it demonstrates |
+| --- | --- |
+| [Research case study](./case-studies/evidence-driven-robot-research-system/) | Problem framing, research architecture, source provenance, and knowledge organization |
+| [Verification framework](./case-studies/evidence-driven-robot-research-system/verification-framework.md) | Evidence classification, uncertainty handling, and human review |
+| [Testing protocol](./case-studies/evidence-driven-robot-research-system/testing-protocol-template.md) | Structured observations, repeatable trials, and discrepancy handling |
 
-### CRIT+C Strategy Framework
+These materials demonstrate research and system design. They do not claim a deployed commercial product or a measured business outcome.
 
-A structured AI-collaboration framework for improving problem definition, context gathering, expert framing, interrogation, output design, challenge-testing, and exploratory reasoning.
+## How This Connects to Customer Operations
 
-The public portfolio references the framework at a high level; the full operating method remains private.
+The same discipline applies when customer information is scattered across CRM notes, support tickets, implementation plans, and stakeholder conversations:
 
-### AI Response Evaluation
+- Keep conclusions traceable to their sources.
+- Surface contradictions before acting on a summary.
+- Separate observed facts from interpretations.
+- Route unresolved questions to a person who can verify them.
+- Check whether the resulting output supports a useful decision.
 
-A structured approach to evaluating AI-generated work rather than relying solely on subjective review or fluent output.
-
-### Talent Intelligence Reverse Engineering
-
-A private-methodology area focused on analyzing role requirements, implied hiring signals, candidate evidence, and market context.
-
-Public materials demonstrate the problem-solving approach without publishing the complete prompt architecture, scoring logic, or research workflow.
+For the post-sale application, see [AI-Enabled Post-Sale Operations](https://github.com/HaelleauX/customer-success-systems/tree/main/case-studies/ai-enabled-post-sale-operations), a system-design study in my Customer Success portfolio.
 
 ## Design Principles
 
-**Evidence before confidence.**  
-AI-generated certainty is not evidence.
+**Evidence before confidence.** Claims need support, even when the writing sounds convincing.
 
-**Human judgment stays in the system.**  
-Automation should improve decisions, not quietly make them.
+**Human accountability.** People review evidence, interpret context, and approve consequential decisions.
 
-**Source provenance matters.**  
-Claims should remain traceable to supporting evidence whenever possible.
+**Useful outputs.** Research should help someone understand, decide, or act.
 
-**Structure improves AI performance.**  
-Clear schemas, taxonomies, constraints, and review gates improve both human and AI reasoning.
+**Visible uncertainty.** Missing evidence and conflicting observations remain explicit.
 
-**Useful beats impressive.**  
-The goal is not AI theater. The goal is better work.
+## Repository Contents
 
-## Repository Structure
-
-- `case-studies/` — public demonstrations of applied systems
-- `frameworks/` — selected public framework summaries
-- `research-systems/` — selected research-system overviews
-- `talent-intelligence/` — public-facing examples only
-- `workflows/` — intentionally limited demonstrations
-- `assets/` — supporting public portfolio assets
-
-Additional materials will be added selectively as the portfolio develops.
-
-## Public Portfolio Boundary
-
-This repository is intentionally **not** the complete implementation library.
-
-Public materials may show:
-
-- the problem being solved
-- system architecture
-- decision principles
-- selected examples
-- generalized workflows
-- sanitized outcomes
-
-Private materials may include:
-
-- complete prompt systems
-- reusable operating templates
-- detailed scoring logic
-- proprietary schemas
-- production workflows
-- implementation playbooks
-- client or employer material
-- paid or licensable IP
-
-The objective is simple:
-
-> **Show the capability without publishing the entire machine.**
+The published materials currently live in `case-studies/evidence-driven-robot-research-system/`. The case study links to both supporting artifacts.
 
 ## About
 
 Created by **Haley Brasher | HaelleauX**.
 
-I build systems for the places where technology, operations, customer experience, and human judgment stop lining up neatly.
+My work connects applied AI, customer operations, implementation, research, and value realization.
 
-**When the dashboard says green and reality says otherwise, I know where to look.**
+[GitHub Profile](https://github.com/HaelleauX) · [Customer Success Systems](https://github.com/HaelleauX/customer-success-systems)
 
-My work spans applied AI, customer operations, implementation, research, and value realization, with a particular focus on finding the gap between what a system says should be happening and what people are actually experiencing.
+## Portfolio Boundary
 
-I use AI to investigate complexity, surface hidden dependencies, challenge false certainty, and turn fragmented information into something people can actually act on.
+This repository contains selected original work and sanitized methodology demonstrations. Complete prompt systems, private research collections, proprietary schemas, production workflows, and customer or employer materials remain private.
 
-**I make complicated systems more reliable, without removing the humans who have to trust and use them.**
-
-## Portfolio Notice
-
-This repository contains original portfolio work, generalized examples, sanitized case studies, and selected demonstrations.
-
-Materials derived from professional engagements are generalized or recreated to protect confidential, proprietary, customer, and employer information.
-
-Unless explicitly stated otherwise, publication in this repository does not grant permission to reproduce or commercially reuse original frameworks or materials.
+Unless explicitly stated otherwise, publication does not grant permission to reproduce or commercially reuse original frameworks or materials.
